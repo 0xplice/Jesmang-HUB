@@ -83,27 +83,6 @@ function TPDepths()
 	rootPart.CFrame = CFrame.new(962.612793, -710.921082, 1291.8678, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end
 
-function TPAltar()
-	rootPart.CFrame = CFrame.new(1298.83813, -807.237671, -307.547272, 0.0331695676, 0, 0.99944973, 0, 1, 0, -0.99944973, 0, 0.0331695676)
-end
-
-function TPMoosewood()
-	rootPart.CFrame = CFrame.new(495.27597, 157.501801, 237.399933, 0.825280786, -0, -0.564722538, 0, 1, -0, 0.564722538, 0, 0.825280786)
-end
-
-function TPDeep()
-	rootPart.CFrame = CFrame.new(-1660.67505, -217.181732, -2844.40723, 0.454964399, 0.000282441149, 0.890509605, -1.20638724e-05, 0.99999994, -0.000311004551, -0.890509605, 0.000130753004, 0.45496434)
-end
-
-function TPForsaken()
-	rootPart.CFrame = CFrame.new(-2530.19751, 132.015152, 1558.64465, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-end
-
-function TPAncient()
-	rootPart.CFrame = CFrame.new(6070.99561, 198.508392, 304.207947, 0.125102103, -0.000243675517, -0.992143869, 1.53022629e-05, 0.99999994, -0.000243675517, 0.992143869, 1.53022629e-05, 0.125102103)
-end
-
-
 --Toggles
 FarmTab:AddToggle({
 	Name = "Auto Equip",
@@ -146,41 +125,6 @@ TeleTab:AddButton({
 	Name = "Teleport to The Depths",
 	Callback = function()
       		TPDepths()
-  	end    
-})
-
-TeleTab:AddButton({
-	Name = "Teleport to Keepers Altar",
-	Callback = function()
-      		TPAltar()
-  	end    
-})
-
-TeleTab:AddButton({
-	Name = "Teleport to Moosewood",
-	Callback = function()
-      		TPMoosewood()
-  	end    
-})
-
-TeleTab:AddButton({
-	Name = "Teleport to Forsaken Shores",
-	Callback = function()
-      		TPForsaken()
-  	end    
-})
-
-TeleTab:AddButton({
-	Name = "Teleport to Desolate Deep",
-	Callback = function()
-      		TPDeep()
-  	end    
-})
-
-TeleTab:AddButton({
-	Name = "Teleport to Ancient Isle",
-	Callback = function()
-      		TPAncient()
   	end    
 })
 
