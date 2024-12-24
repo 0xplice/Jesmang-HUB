@@ -195,7 +195,7 @@ TeleTab:AddButton({
   	end    
 })
 
-TeleTab:AddButton({
+MiscTab:AddButton({
 	Name = "Auto Sell All",
 	Callback = function()
       		sell()
