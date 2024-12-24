@@ -111,7 +111,7 @@ function autoCast()
     end
 
 function sell()
-	workspace.world.npcs:FindFirstChild("Milo Merchant").merchant.sellall:InvokeServer()
+	workspace.world.npcs:FindFirstChild("Mann Merchant").merchant.sellall:InvokeServer()
 end
 
 
