@@ -196,7 +196,7 @@ TeleTab:AddButton({
 })
 
 MiscTab:AddButton({
-	Name = "Auto Sell All",
+	Name = "Auto Sell All (Need to go to Ancient Isle)",
 	Callback = function()
       		sell()
   	end    
