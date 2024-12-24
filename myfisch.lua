@@ -111,6 +111,8 @@ function autoCast()
     end
 
 function sell()
+	rootPart.CFrame = CFrame.new(6070.99561, 198.508392, 304.207947, 0.125102103, -0.000243675517, -0.992143869, 1.53022629e-05, 0.99999994, -0.000243675517, 0.992143869, 1.53022629e-05, 0.125102103)
+	wait(.8)
 	workspace.world.npcs:FindFirstChild("Mann Merchant").merchant.sellall:InvokeServer()
 end
 
@@ -196,7 +198,7 @@ TeleTab:AddButton({
 })
 
 MiscTab:AddButton({
-	Name = "Auto Sell All (Need to go to Ancient Isle)",
+	Name = "Auto Sell All",
 	Callback = function()
       		sell()
   	end    
