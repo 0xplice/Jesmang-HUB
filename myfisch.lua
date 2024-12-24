@@ -79,21 +79,21 @@ function autoEquip()
 
         game:GetService("Players").LocalPlayer.PlayerGui.hud.safezone.backpack.events.equip:FireServer(unpack(args))
 
-        wait(.000000000000001)
+        wait(.001)
      end
     end
 
 function autoReel()
     while _G.autoReel == true do
         game:GetService("ReplicatedStorage").events.reelfinished:FireServer(100,false)
-        wait(.000000000000001)
+        wait(.001)
      end
     end
 
 function autoReelP()
     while _G.autoReelP == true do
         game:GetService("ReplicatedStorage").events.reelfinished:FireServer(100,true)
-        wait(.000000000000001)
+        wait(.001)
      end
     end
 
@@ -106,7 +106,7 @@ function autoCast()
 
 		game:GetService("Players").LocalPlayer.Character:FindFirstChild(_G.selectRod).events.cast:FireServer(unpack(args))
 
-        wait(.000000000000001)
+        wait(.001)
      end
     end
 
