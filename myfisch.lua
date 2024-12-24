@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Jesmang HUB", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "Jesmang"})
+local Window = OrionLib:MakeWindow({Name = "Jesmang HUB | Fisch", HidePremium = false, IntroEnabled = true, SaveConfig = true, ConfigFolder = "Jesmang"})
 
 --Locals
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
