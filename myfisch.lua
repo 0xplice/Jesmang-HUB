@@ -54,6 +54,12 @@ local TeleTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local MiscTab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 
 FarmTab:AddDropdown({
 	Name = "Select Rod",
@@ -103,6 +109,10 @@ function autoCast()
         wait(.000000000000001)
      end
     end
+
+function sell()
+	workspace.world.npcs:FindFirstChild("Milo Merchant").merchant.sellall:InvokeServer()
+end
 
 
 --Toggles
@@ -182,6 +192,13 @@ TeleTab:AddButton({
 	Name = "Teleport to Ancient Isle",
 	Callback = function()
       		TPAncient()
+  	end    
+})
+
+TeleTab:AddButton({
+	Name = "Auto Sell All",
+	Callback = function()
+      		sell()
   	end    
 })
 
